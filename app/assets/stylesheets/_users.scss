@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+  font-family: 'SofiaProBold';
+  src:url('sofiabold.eot');
+  src:url('sofiabold.eot?#iefix') format('embedded-opentype');
+}
 .more {
     float: left;
     text-transform: uppercase;
@@ -10,29 +15,25 @@
     letter-spacing: 1.5px;
     width: 100%;
     font-size: 22px;
-    font: normal 22px "sofia_proregular";
+    font: bold 22px sans-serif;
     text-align: center;
     color: #0068FF;
 }
 
-.center2 {
-    width: 1280px;
-    margin: 0 auto;
+input[type="email"] {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: '';
+    font-weight: bold;
 }
 
-.form-group {
-    margin: 0 auto;
-    width: 400px;
-
-    .new_user {
-        float: left;
-    }
-
-    input[type="email"] {
-        height: 30px;
-        width: 100%;
-        text-align: center;
-    }
+input[type="submit"] {
+  height: 50px;
+  background-color: #0068FF;
+  font-family: sans-serif;
+  border-radius: 0px;
+  font-size: 22px;
 }
 
 .right-image {
@@ -60,10 +61,8 @@
     .info {
         padding-top: 163px;
         letter-spacing: 1.5px;
-        margin: 0 auto;
-        width: 400px;
         font-size: 22px;
-        font: normal 22px "sofia_proregular";
+        font: normal 22px sans-serif;
         text-align: center;
         padding-bottom: 103px;
     }
@@ -102,7 +101,7 @@
         span {
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            font: normal 22px "sofia_proregular";
+            font: normal 22px sans-serif;
             color: #fff;
         }
 
@@ -120,9 +119,11 @@
             text-align: center;
             font-size: 20px;
             display: block;
+            font-family: sans-serif;
         }
 
         .how {
+            font-family: sans-serif;
             width: 100%;
             text-align: center;
             display: block;
@@ -138,7 +139,7 @@
         text-align: center;
         display: block;
         padding-top: 10px;
-        font: normal 18px "sofia_proregular";
+        font: normal 18px sans-serif;
     }
 
     .step:first-child {
@@ -147,7 +148,7 @@
 
     .step {
         padding-top: 30px;
-        font: bold 18px "sofia_proregular";
+        font: bold 18px sans-serif;
         text-transform: uppercase;
         letter-spacing: 1.5px;
         color: #0068FF;
@@ -173,7 +174,7 @@
         text-align: center;
         background-color: rgb(57, 55, 55);
         color: #fff;
-        font: normal 18px "sofia_proregular";
+        font: normal 18px sans-serif;
     }
 
     .copy-link {
@@ -215,12 +216,13 @@
         width: 300px;
         display: block;
         margin: 100px auto 0;
-        font: normal 18px "sofia_proregular";
+        font: normal 18px sans-serif;
         letter-spacing: 1.5px;
     }
 
     .step:last-child {
-        padding-top: 70px;
+        padding-top: 59px;
+        font-family: sans-serif;
     }
 }
 
@@ -237,11 +239,12 @@
         width: 100%;
         height: 204px;
         letter-spacing: 1.5px;
-        font: normal 18px "sofia_proregular";
+        font: normal 18px sans-serif;
         color: #fff;
         position: relative;
 
         .name {
+            font-family: sans-serif;
             float: left;
             width: 80%;
             padding-left: 5px;

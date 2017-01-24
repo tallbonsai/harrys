@@ -26,7 +26,7 @@
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
             <span class="info">Each sign up puts you one step closer to Christmas in January</span>
-            <span class="step">gift tracer &#8594;</span>
+            <span class="step">Gift Tracker &#8594;</span>
         </div>
         <div class="col-md-3 bonsai-panel rewards-col">
           <div class="rewards" data-points="<%= @user.referrals.count %>">
@@ -38,7 +38,7 @@
           <div class="reward" data-min="10">
             <div class="name">Harry's Shave Kit</div>
             <div class="points">25</div>
-            <div class="image"><%= image_tag('shavekit.png') %></div>            
+            <div class="image"><%= image_tag('shavekit.png') %></div>
           </div>
           <div class="reward" data-min="5">
             <div class="name">Harry's Truman Razor</div>
