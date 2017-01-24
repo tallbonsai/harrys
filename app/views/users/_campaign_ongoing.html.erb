@@ -1,6 +1,10 @@
-<div class="form-group">
-  <%= form_for @user, :url => { :action => "create" } do |f| %>
-    <%= f.email_field :email, :placeholder => "name@example.com", class: 'form-control' %>
-    <input class="btn btn-large btn-primary" name="commit" type="submit" value="Suprise Me!" />
-  <% end %>
+<div class="col-md-3 col-md-offset-4">
+    <%= form_for @user, class: 'form-group', :url => { :action => "create" } do |f| %>
+    <div class="col-md-10 col-sm-10 col-xs-9">
+        <%= f.email_field :email, :placeholder => "name@example.com", class: 'form-control' %>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-3">
+        <%= f.submit class: "btn btn-large btn-primary", value: "Suprise Me!" %>
+    </div>
+    <% end %>
 </div>

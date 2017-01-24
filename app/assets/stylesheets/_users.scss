@@ -2,45 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.center {
-    width: 1280px;
-    margin: 0 auto;
+.more {
+    float: left;
+    text-transform: uppercase;
+    padding-top: 53px;
+    padding-bottom: 20px;
+    letter-spacing: 1.5px;
+    width: 100%;
+    font-size: 22px;
+    font: normal 22px "sofia_proregular";
+    text-align: center;
+    color: #0068FF;
 }
 
 .center2 {
     width: 1280px;
     margin: 0 auto;
+}
 
-    .more {
+.form-group {
+    margin: 0 auto;
+    width: 400px;
+
+    .new_user {
         float: left;
-        text-transform: uppercase;
-        padding-top: 53px;
-        padding-bottom: 20px;
-        letter-spacing: 1.5px;
-        width: 100%;
-        font-size: 22px;
-        font: normal 22px "sofia_proregular";
-        text-align: center;
-        color: #0068FF;
     }
 
-    .form-group {
-        margin: 0 auto;
-        width: 400px;
-
-        .new_user {
-            float: left;
-        }
-
-        input[type="email"] {
-            height: 30px;
-            text-align: center;
-        }
+    input[type="email"] {
+        height: 30px;
+        width: 100%;
+        text-align: center;
     }
 }
 
 .right-image {
-    min-width: 60%;
+    padding: 0;
+    min-width: 100%;
     background: image-url('harrys-image.jpg');
     background-size: cover;
     float: left;
@@ -48,10 +45,10 @@
 }
 
 .blue-side {
-    width: 40%;
     background-color: #0068FF;
     color: #fff;
     float: left;
+    width: 100%;
 
     .logo {
         margin: 0 auto;
@@ -75,6 +72,10 @@
 .bonsai-panel {
     height: 100%;
     min-height: 100%;
+}
+
+.without-padding {
+    padding: 0;
 }
 
 .main-page {

@@ -18,31 +18,39 @@ class User < ActiveRecord::Base
       'count' => 5,
       'html' => 'Shave<br>Cream',
       'class' => 'two',
-      'image' =>  ActionController::Base.helpers.asset_path(
-        'refer/cream-tooltip@2x.png')
+      'image' => ActionController::Base.helpers.asset_path(
+        'refer/cream-tooltip@2x.png'
+      )
     },
     {
       'count' => 10,
       'html' => 'Truman Handle<br>w/ Blade',
       'class' => 'three',
       'image' => ActionController::Base.helpers.asset_path(
-        'refer/truman@2x.png')
+        'refer/truman@2x.png'
+      )
     },
     {
       'count' => 25,
       'html' => 'Winston<br>Shave Set',
       'class' => 'four',
       'image' => ActionController::Base.helpers.asset_path(
-        'refer/winston@2x.png')
+        'refer/winston@2x.png'
+      )
     },
     {
       'count' => 50,
       'html' => 'One Year<br>Free Blades',
       'class' => 'five',
       'image' => ActionController::Base.helpers.asset_path(
-        'refer/blade-explain@2x.png')
+        'refer/blade-explain@2x.png'
+      )
     }
-  ]
+  ].freeze
+
+  def send_welcome_email
+    UserMailer.signup_email(self).deliver
+  end
 
   private
 
@@ -50,7 +58,4 @@ class User < ActiveRecord::Base
     self.referral_code = UsersHelper.unused_referral_code
   end
 
-  def send_welcome_email
-    UserMailer.delay.signup_email(self)
-  end
 end
