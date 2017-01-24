@@ -21,6 +21,12 @@ $(document).ready(function() {
                 _this.addClass('completed');
             else if (progress_stop && min_points != points) {
                 $(_this).css('background', '-webkit-linear-gradient(bottom, #0068FF, #0068FF ' + height_percent + '%, transparent ' + height_percent + '%, transparent 100%)');
+                $(_this).append("<div class='progress-reward'>"+points+"</div>");
+                var margin = 204-50-height_percent;
+                console.log(margin);
+                $('.progress-reward').css('margin-top', margin+'px');
+
+
             }
         }
     }
